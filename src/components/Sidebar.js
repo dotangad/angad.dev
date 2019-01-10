@@ -8,7 +8,7 @@ const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px;
 `
 
@@ -27,7 +27,8 @@ const AngadImg = styled.img`
 
 const Name = styled.div`
   margin-top: 30px;
-  font-size: 23px;
+  font-size: 22px;
+  font-weight: bold;
 `
 
 const Nav = styled.div`
@@ -39,7 +40,7 @@ const NavItem = styled.a`
   text-decoration: none;
   margin: 15px 0;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   color: inherit;
   cursor: pointer;
 
@@ -76,8 +77,9 @@ export default () => (
     </Intro>
 
     <Nav>
-      {config.navItems.map(navItem => (
+      {config.navItems.map((navItem, i) => (
         <NavItem
+          key={i}
           onClick={() =>
             document
               .querySelector(`#${navItem.id}`)
@@ -90,8 +92,8 @@ export default () => (
     </Nav>
 
     <SocialIconContainer>
-      {config.social.map(icon => (
-        <SocialIconA href={icon.link}>
+      {config.social.map((icon, i) => (
+        <SocialIconA key={i} href={icon.link}>
           <SocialIcon className={icon.fa} />
         </SocialIconA>
       ))}

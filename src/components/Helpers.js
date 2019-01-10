@@ -1,19 +1,24 @@
-import React from 'react'
 import styled from 'styled-components'
 
 import config from '../config'
 
 export const Section = styled.div`
   padding: 20px;
-  margin: 30px 0;
   width: 100%;
   text-align: justify;
+  &:first-child {
+    margin-top: 0;
+  }
 `
 
 export const SectionHeader = styled.div`
   margin: 20px 0;
   font-size: 2rem;
   font-weight: bold;
+`
+
+export const SectionSubheader = styled.div`
+  font-size: 1rem;
 `
 
 export const Link = styled.a`
