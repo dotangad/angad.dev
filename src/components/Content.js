@@ -15,7 +15,7 @@ const BodyP = styled.p`
 
 const About = () => (
   <Section id="about">
-    <SectionHeader>About</SectionHeader>
+    <SectionHeader className="section-header">About</SectionHeader>
     <BodyP>
       <span aria-label="Wave" role="img" style={{ marginRight: '5px' }}>
         👋
@@ -28,7 +28,7 @@ const About = () => (
       <Link target="__blank" href="https://exunclan.com">
         Exun Clan
       </Link>
-      . I am passionate about solving problems with technology and creating
+      . I am passionate about creating solutions with technology and building
       products people love. Some of my other interests include politics,
       economics and theological history.
     </BodyP>
@@ -49,10 +49,12 @@ const SchoolDesc = styled.div`
 
 const Education = () => (
   <Section id="education">
-    <SectionHeader>Education</SectionHeader>
+    <SectionHeader className="section-header">Education</SectionHeader>
     <div>
-      <SchoolName>Delhi Public School R.K. Puram</SchoolName>
-      <SchoolDesc>Class of '22</SchoolDesc>
+      <SchoolName className="schoolname">
+        Delhi Public School R.K. Puram
+      </SchoolName>
+      <SchoolDesc className="schooldesc">Class of '22</SchoolDesc>
       <BodyP>
         I study in the 9th Grade at Delhi Public School, R.K. Puram. I am an
         active member of my high school's computer club,{' '}
@@ -72,7 +74,7 @@ const Education = () => (
 
 const Skills = () => (
   <Section id="skills">
-    <SectionHeader>Skills</SectionHeader>
+    <SectionHeader className="section-header">Skills</SectionHeader>
     <BodyP>
       I'm proficient in <strong>Node.js</strong>, <strong>React.js</strong>,{' '}
       <strong>PHP</strong> and <strong>Koa.js</strong>. I can also use vanilla

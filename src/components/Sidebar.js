@@ -27,7 +27,7 @@ const AngadImg = styled.img`
 
 const Name = styled.div`
   margin-top: 30px;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: bold;
 `
 
@@ -71,7 +71,7 @@ const SocialIcon = styled.i`
 
 export default () => (
   <Sidebar className="sidebar">
-    <Intro>
+    <Intro className="intro">
       <AngadImg alt="Angad Singh" src={Angad} />
       <Name>Angad Singh</Name>
     </Intro>
@@ -93,7 +93,7 @@ export default () => (
 
     <SocialIconContainer className="social">
       {config.social.map((icon, i) => (
-        <SocialIconA key={i} href={icon.link}>
+        <SocialIconA target="__blank" key={i} href={icon.link}>
           <SocialIcon className={icon.fa} />
         </SocialIconA>
       ))}

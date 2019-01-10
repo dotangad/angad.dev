@@ -60,7 +60,23 @@
     margin: 0 10px;
   }
   .content {
+    width: 400px;
     height: auto;
     margin: 0 auto;
+    font-size: 1.2rem !important;
+    line-height: 1.9rem !important;
+  }
+  .schoolname {
+    font-size: 1.2rem !important;
+  }
+  .schooldesc {
+    font-size: 0.9rem !important;
+    margin-bottom: 5px !important;
+  }
+  .section-header {
+    font-size: 1.8rem !important;
+  }
+  a {
+    border-bottom-width: 2px !important;
   }
 }
