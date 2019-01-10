@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "react-scripts build && gh-pages --dist build"
+    "deploy": "react-scripts build && gh-pages --dist build --branch master"
   },
   "eslintConfig": {
     "extends": "react-app"
