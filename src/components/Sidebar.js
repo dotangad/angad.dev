@@ -76,7 +76,7 @@ export default () => (
       <Name>Angad Singh</Name>
     </Intro>
 
-    <Nav>
+    <Nav className="nav">
       {config.navItems.map((navItem, i) => (
         <NavItem
           key={i}
@@ -91,7 +91,7 @@ export default () => (
       ))}
     </Nav>
 
-    <SocialIconContainer>
+    <SocialIconContainer className="social">
       {config.social.map((icon, i) => (
         <SocialIconA key={i} href={icon.link}>
           <SocialIcon className={icon.fa} />

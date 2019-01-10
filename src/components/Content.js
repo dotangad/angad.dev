@@ -94,10 +94,28 @@ const Skills = () => (
   </Section>
 )
 
+const Footer = () => (
+  <Section
+    style={{
+      textAlign: 'center',
+      fontSize: '1rem',
+      lineHeight: '1.3rem',
+      marginBottom: '30px'
+    }}
+  >
+    <div>&copy; Angad Singh 2018</div>
+    <div>
+      Previous versions of this website are available{' '}
+      <Link href="https://github.com/dotangad/dotangad.github.io">here</Link>.
+    </div>
+  </Section>
+)
+
 export default () => (
   <Content className="content">
     <About />
     <Education />
     <Skills />
+    <Footer />
   </Content>
 )

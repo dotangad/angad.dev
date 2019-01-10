@@ -25,7 +25,8 @@ export const Link = styled.a`
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 3px solid #555;
-  transition: color 0.5s ease;
+  transition: color 0.2s ease;
+  transition: border-color 0.2s ease;
   &:hover {
     color: ${config.baseColor};
     border-bottom-color: ${config.baseColor};
