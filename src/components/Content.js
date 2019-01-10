@@ -71,7 +71,7 @@ const Education = () => (
 )
 
 const Skills = () => (
-  <Section>
+  <Section id="skills">
     <SectionHeader>Skills</SectionHeader>
     <BodyP>
       I'm proficient in <strong>Node.js</strong>, <strong>React.js</strong>,{' '}
