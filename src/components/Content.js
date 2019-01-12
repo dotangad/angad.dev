@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Section, SectionHeader, Link } from './Helpers'
 
 const Content = styled.div`
-  padding: 0 30px;
+  padding: 50px 30px;
   font-size: 1.3rem;
   line-height: 2rem;
 `

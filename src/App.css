@@ -6,6 +6,7 @@
   width: 800px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
   height: 100%;
 }
 
@@ -13,24 +14,15 @@
   width: 200px;
   height: calc(100% - 100px);
   margin: auto 0;
+  position: fixed;
 }
 
 .content {
+  position: relative;
+  left: 200px;
   width: 600px;
-  height: calc(100% - 100px);
   margin: auto 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  background: transparent;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #00000030;
-  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -46,6 +38,7 @@
     height: 350px;
     margin: 0 auto;
     width: 100%;
+    position: relative;
   }
   .sidebar .nav {
     display: none;
@@ -60,6 +53,7 @@
     margin: 0 10px;
   }
   .content {
+    left: 0;
     width: 400px;
     padding: 10px 0 !important;
     height: auto;
