@@ -77,7 +77,7 @@ const Skills = () => (
     <SectionHeader className="section-header">Skills</SectionHeader>
     <BodyP>
       I'm proficient in <strong>Node.js</strong>, <strong>Koa.js</strong>,{' '}
-      <strong>Express.js</strong>, <strong>React.js</strong>, and
+      <strong>Express.js</strong>, <strong>React.js</strong>, and{' '}
       <strong>PHP</strong>. I can also use vanilla JavaScript to create highly
       interactive user interfaces and memorable experiences.
     </BodyP>
