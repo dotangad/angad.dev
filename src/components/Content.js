@@ -115,11 +115,11 @@ const Footer = () => (
     <ThemeToggle />
     <div>&copy; Angad Singh 2018</div>
     <div>
-      Previous versions of this website are available{' '}
+      Source available{' '}
       <Link
-        style={{ borderWidth: '2px' }}
+        style={{ borderWidth: '2px', paddingBottom: '0' }}
         target="_blank"
-        href="https://github.com/dotangad/dotangad.github.io"
+        href="https:github.com/dotangad/dotangad.github.io"
       >
         here
       </Link>
