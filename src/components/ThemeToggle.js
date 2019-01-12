@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import config from '../config'
+
 const ToggleContainer = styled.div`
   padding: 10px;
   display: flex;
@@ -37,26 +39,82 @@ const Switch = styled.div`
   z-index: 100001;
 `
 
-export default ({ show }) =>
-  show ? (
-    <ToggleContainer>
-      <Icon className="fas fa-moon" />
-      <Toggle
-        className="toggle"
-        onClick={e => {
-          const switchDiv = e.target.classList.contains('toggle')
-            ? e.target.childNodes[0]
-            : e.target
-          window.darkTheme = !window.darkTheme
-          switchDiv.style.transform == ''
-            ? (switchDiv.style.transform = 'translateX(12px)')
-            : (switchDiv.style.transform = '')
-        }}
-      >
-        <Switch className="switch" />
-      </Toggle>
-      <Icon className="fas fa-sun" />
-    </ToggleContainer>
-  ) : (
-    ''
-  )
+const onThemeToggle = e => {
+  window.darkTheme = !window.darkTheme
+  const switchDiv = e.target.classList.contains('toggle')
+    ? e.target.childNodes[0]
+    : e.target
+  switchDiv.style.transform === ''
+    ? (switchDiv.style.transform = 'translateX(12px)')
+    : (switchDiv.style.transform = '')
+
+  if (window.darkTheme) {
+    document.querySelectorAll('*').forEach((e, i, all) => {
+      e.style.color = '#eee'
+    })
+
+    const body = document.body
+    body.style.background = '#000000'
+
+    document.querySelector('img').style.boxShadowColor =
+      'box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(256, 256, 256, 0.1);'
+
+    document
+      .querySelectorAll('.toggle')
+      .forEach((e, i, all) => (e.style.background = '#ffffff80'))
+    document
+      .querySelectorAll('.switch')
+      .forEach((e, i, all) => (e.style.background = '#000'))
+
+    document.querySelectorAll('a').forEach((e, i, all) => {
+      e.style.borderColor = '#ddd'
+      e.addEventListener('mouseenter', () => {
+        e.style.borderColor = config.baseColor
+        e.style.color = config.baseColor
+      })
+      e.addEventListener('mouseleave', () => {
+        e.style.borderColor = '#ddd'
+        e.style.color = '#eee'
+      })
+    })
+  } else {
+    document.querySelectorAll('*').forEach((e, i, all) => {
+      e.style.color = '#333'
+    })
+
+    const body = document.body
+    body.style.background = '#00000010'
+
+    document.querySelector('img').style.boxShadowColor =
+      'box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);'
+
+    document
+      .querySelectorAll('.toggle')
+      .forEach((e, i, all) => (e.style.background = '#00000080'))
+    document
+      .querySelectorAll('.switch')
+      .forEach((e, i, all) => (e.style.background = '#fff'))
+
+    document.querySelectorAll('a').forEach((e, i, all) => {
+      e.style.borderColor = '#333'
+      e.addEventListener('mouseenter', () => {
+        e.style.borderColor = config.baseColor
+        e.style.color = config.baseColor
+      })
+      e.addEventListener('mouseleave', () => {
+        e.style.borderColor = '#333'
+        e.style.color = '#333'
+      })
+    })
+  }
+}
+
+export default () => (
+  <ToggleContainer className="toggle-container">
+    <Icon className="fas fa-sun" />
+    <Toggle className="toggle" onClick={onThemeToggle}>
+      <Switch className="switch" />
+    </Toggle>
+    <Icon className="fas fa-moon" />
+  </ToggleContainer>
+)

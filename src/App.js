@@ -6,8 +6,6 @@ import Sidebar from './components/Sidebar'
 import Content from './components/Content'
 
 class App extends Component {
-  componentWillMount() {}
-
   render() {
     return (
       <div className="App">

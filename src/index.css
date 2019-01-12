@@ -19,6 +19,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   color: #333;
+  transition: color ease 0.2s;
 }
 
 code {

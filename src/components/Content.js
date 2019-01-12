@@ -104,6 +104,7 @@ const Skills = () => (
 
 const Footer = () => (
   <Section
+    className="footer"
     style={{
       textAlign: 'center',
       fontSize: '1rem',
@@ -111,11 +112,12 @@ const Footer = () => (
       marginBottom: '30px'
     }}
   >
-    <ThemeToggle show={false} />
+    <ThemeToggle />
     <div>&copy; Angad Singh 2018</div>
     <div>
       Previous versions of this website are available{' '}
       <Link
+        style={{ borderWidth: '2px' }}
         target="_blank"
         href="https://github.com/dotangad/dotangad.github.io"
       >

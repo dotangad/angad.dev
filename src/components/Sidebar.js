@@ -99,7 +99,7 @@ export default () => (
           <SocialIcon className={icon.fa} />
         </SocialIconA>
       ))}
-      <ThemeToggle show={true} />
+      <ThemeToggle />
     </SocialIconContainer>
   </Sidebar>
 )
