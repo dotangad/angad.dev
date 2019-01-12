@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Section, SectionHeader, Link } from './Helpers'
+import ThemeToggle from './ThemeToggle'
 
 const Content = styled.div`
   padding: 50px 30px;
@@ -110,6 +111,7 @@ const Footer = () => (
       marginBottom: '30px'
     }}
   >
+    <ThemeToggle show={false} />
     <div>&copy; Angad Singh 2018</div>
     <div>
       Previous versions of this website are available{' '}
