@@ -9,7 +9,7 @@ const Sidebar = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px 75px;
 `
 
 const Intro = styled.div`
@@ -34,6 +34,7 @@ const Name = styled.div`
 
 const Nav = styled.div`
   width: 100%;
+  margin-left: 10%;
 `
 
 const NavItem = styled.a`
