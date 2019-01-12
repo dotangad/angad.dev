@@ -61,6 +61,7 @@
   }
   .content {
     width: 400px;
+    padding: 10px 0 !important;
     height: auto;
     margin: 0 auto;
     font-size: 1.2rem !important;
@@ -78,5 +79,19 @@
   }
   a {
     border-bottom-width: 2px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    padding: 10px 0 !important;
+    width: 370px;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 10px 0 !important;
+    width: 350px;
   }
 }

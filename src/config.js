@@ -6,16 +6,16 @@ export default {
       link: 'https://github.com/dotangad'
     },
     {
-      fa: 'fas fa-phone',
-      link: 'tel:+91 8588054273'
-    },
-    {
-      fa: 'fas fa-at',
-      link: 'mailto:angadsingh567890@gmail.com'
+      fa: 'fab fa-twitter',
+      link: 'https://twitter.com/dotangad'
     },
     {
       fa: 'fab fa-linkedin',
       link: 'https://linkedin.com/in/dotangad'
+    },
+    {
+      fa: 'fas fa-envelope',
+      link: 'mailto:angadsingh567890@gmail.com'
     }
   ],
   navItems: [
@@ -30,10 +30,10 @@ export default {
     {
       display: 'Skills',
       id: 'skills'
-    },
-    {
-      display: 'Projects',
-      id: 'projects'
     }
+    // {
+    //   display: 'Projects',
+    //   id: 'projects'
+    // }
   ]
 }
