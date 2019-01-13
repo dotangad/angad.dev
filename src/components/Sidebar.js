@@ -91,6 +91,7 @@ export default () => (
           {navItem.display}
         </NavItem>
       ))}
+      <NavItem href="/blog/">Blog</NavItem>
     </Nav>
 
     <SocialIconContainer className="social">

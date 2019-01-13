@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 900px) {
+  p.blog {
+    display: block !important;
+  }
   .sidebar .toggle-container {
     display: none;
   }

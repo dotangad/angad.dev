@@ -33,6 +33,10 @@ const About = () => (
       products people love. Some of my other interests include Tetris, politics,
       economics and theological history.
     </BodyP>
+    <BodyP className="blog" style={{ display: 'none' }}>
+      I often write about projects I'm working on, tech I've used and other
+      things on my <Link href="/blog">blog</Link>.
+    </BodyP>
   </Section>
 )
 
