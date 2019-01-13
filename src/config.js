@@ -16,6 +16,10 @@ export default {
     {
       fa: 'fas fa-envelope',
       link: 'mailto:angadsingh567890@gmail.com'
+    },
+    {
+      fa: 'fas fa-rss-square',
+      link: '/blog/feed.xml'
     }
   ],
   navItems: [
