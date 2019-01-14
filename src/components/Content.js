@@ -123,7 +123,7 @@ const Footer = () => (
       <Link
         style={{ borderWidth: '2px', paddingBottom: '0' }}
         target="_blank"
-        href="https:github.com/dotangad/dotangad.github.io"
+        href="https://github.com/dotangad/dotangad.github.io"
       >
         here
       </Link>
