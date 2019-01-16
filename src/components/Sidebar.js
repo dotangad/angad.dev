@@ -64,7 +64,7 @@ const SocialIconA = styled.a`
 `
 
 const SocialIcon = styled.i`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
   &:hover {
     color: ${config.baseColor};

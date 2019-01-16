@@ -18,6 +18,10 @@ export default {
       link: 'mailto:angadsingh567890@gmail.com'
     },
     {
+      fa: 'fab fa-telegram',
+      link: 'https://t.me/dotangad'
+    },
+    {
       fa: 'fas fa-rss-square',
       link: '/blog/feed.xml'
     }
