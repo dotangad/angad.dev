@@ -25,19 +25,9 @@
   overflow: hidden;
 }
 
-.footer .toggle-container {
-  display: none;
-}
-
 @media (max-width: 900px) {
   p.blog {
     display: block !important;
-  }
-  .sidebar .toggle-container {
-    display: none;
-  }
-  .footer .toggle-container {
-    display: flex;
   }
   body, html {
     overflow-y: auto;

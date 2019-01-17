@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import Angad from './img/angad.jpeg'
 import config from '../config'
-import ThemeToggle from './ThemeToggle'
 
 const Sidebar = styled.div`
   display: flex;
@@ -100,7 +99,6 @@ export default () => (
           <SocialIcon className={icon.fa} />
         </SocialIconA>
       ))}
-      <ThemeToggle />
     </SocialIconContainer>
   </Sidebar>
 )

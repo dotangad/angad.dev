@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Emoji from 'react-emoji-render'
 
 import { Section, SectionHeader, Link } from './Helpers'
 import ThemeToggle from './ThemeToggle'
@@ -18,10 +19,7 @@ const About = () => (
   <Section id="about">
     <SectionHeader className="section-header">About</SectionHeader>
     <BodyP>
-      <span aria-label="Wave" role="img" style={{ marginRight: '5px' }}>
-        👋
-      </span>
-      Hi! I'm Angad, a student at{' '}
+      <Emoji text=":wave:"/> Hi! I'm Angad, a student at{' '}
       <Link target="__blank" href="https://dpsrkp.net">
         Delhi Public School, R.K. Puram
       </Link>{' '}
@@ -106,6 +104,15 @@ const Skills = () => (
   </Section>
 )
 
+const Contact = () => (
+  <Section id="contact">
+    <SectionHeader className="section-header">Contact</SectionHeader>
+    <BodyP>
+      If you want to work with me you can email me <Link href="mailto:angadsingh567890@gmail">here</Link>. You could also <Link href="https://twitter.com/dotangad" target="__blank">tweet</Link> to me or <Link href="https://t.me/dotangad">text me on Telegram</Link>.
+    </BodyP>
+  </Section>
+)
+
 const Footer = () => (
   <Section
     className="footer"
@@ -137,6 +144,7 @@ export default () => (
     <About />
     <Education />
     <Skills />
+    <Contact />
     <Footer />
   </Content>
 )

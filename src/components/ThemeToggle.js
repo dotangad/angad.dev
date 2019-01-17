@@ -58,14 +58,11 @@ export default class ThemeToggle extends React.Component {
 
     if (window.darkTheme) {
       document.querySelectorAll('*').forEach((e, i, all) => {
-        e.style.color = '#eee'
+        e.style.color = '#fefefe'
       })
 
       const body = document.body
       body.style.background = '#000000'
-
-      document.querySelector('img').style.boxShadow =
-        'box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(256, 256, 256, 0.1);'
 
       document
         .querySelectorAll('.toggle')
@@ -79,7 +76,7 @@ export default class ThemeToggle extends React.Component {
           e.style.color = config.baseColor
         })
         e.addEventListener('mouseleave', () => {
-          e.style.color = '#eee'
+          e.style.color = '#fefefe'
         })
       })
 
@@ -91,7 +88,18 @@ export default class ThemeToggle extends React.Component {
         })
         e.addEventListener('mouseleave', () => {
           e.style.borderColor = '#ddd'
-          e.style.color = '#eee'
+          e.style.color = '#fefefe'
+        })
+      })
+      document.querySelectorAll('i').forEach((e, i, all) => {
+        e.style.borderColor = '#ddd'
+        e.addEventListener('mouseenter', () => {
+          e.style.borderColor = config.baseColor
+          e.style.color = config.baseColor
+        })
+        e.addEventListener('mouseleave', () => {
+          e.style.borderColor = '#ddd'
+          e.style.color = '#fefefe'
         })
       })
     } else {
@@ -101,9 +109,6 @@ export default class ThemeToggle extends React.Component {
 
       const body = document.body
       body.style.background = 'white'
-
-      document.querySelector('img').style.boxShadow =
-        'box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);'
 
       document
         .querySelectorAll('.toggle')
@@ -122,6 +127,17 @@ export default class ThemeToggle extends React.Component {
       })
 
       document.querySelectorAll('a').forEach((e, i, all) => {
+        e.style.borderColor = '#333'
+        e.addEventListener('mouseenter', () => {
+          e.style.borderColor = config.baseColor
+          e.style.color = config.baseColor
+        })
+        e.addEventListener('mouseleave', () => {
+          e.style.borderColor = '#333'
+          e.style.color = '#333'
+        })
+      })
+      document.querySelectorAll('i').forEach((e, i, all) => {
         e.style.borderColor = '#333'
         e.addEventListener('mouseenter', () => {
           e.style.borderColor = config.baseColor

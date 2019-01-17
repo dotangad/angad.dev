@@ -38,10 +38,10 @@ export default {
     {
       display: 'Skills',
       id: 'skills'
+    },
+    {
+      display: 'Contact',
+      id: 'contact'
     }
-    // {
-    //   display: 'Projects',
-    //   id: 'projects'
-    // }
   ]
 }
