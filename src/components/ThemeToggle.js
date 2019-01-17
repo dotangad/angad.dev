@@ -66,7 +66,7 @@ export default class ThemeToggle extends React.Component {
 
       document
         .querySelectorAll('.toggle')
-        .forEach((e, i, all) => (e.style.background = '#ffffff'))
+        .forEach((e, i, all) => (e.style.background = '#ffffff80'))
       document
         .querySelectorAll('.switch')
         .forEach((e, i, all) => (e.style.background = '#000'))
@@ -91,7 +91,7 @@ export default class ThemeToggle extends React.Component {
           e.style.color = '#fefefe'
         })
       })
-      document.querySelectorAll('i').forEach((e, i, all) => {
+      document.querySelectorAll('a i').forEach((e, i, all) => {
         e.style.borderColor = '#ddd'
         e.addEventListener('mouseenter', () => {
           e.style.borderColor = config.baseColor
@@ -137,7 +137,7 @@ export default class ThemeToggle extends React.Component {
           e.style.color = '#333'
         })
       })
-      document.querySelectorAll('i').forEach((e, i, all) => {
+      document.querySelectorAll('a i').forEach((e, i, all) => {
         e.style.borderColor = '#333'
         e.addEventListener('mouseenter', () => {
           e.style.borderColor = config.baseColor
