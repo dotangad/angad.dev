@@ -60,7 +60,7 @@ const Education = () => (
       </SchoolName>
       <SchoolDesc className="schooldesc">Class of '22</SchoolDesc>
       <BodyP>
-        I am a high school freshman at Delhi Public School, R.K. Puram. I am an
+        I am a high school sophomore at Delhi Public School, R.K. Puram. I am an
         active member of my school's computer club,{' '}
         <Link target="__blank" href="https://exunclan.com">
           Exun Clan
