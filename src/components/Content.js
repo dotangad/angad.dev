@@ -19,7 +19,8 @@ const About = () => (
   <Section id="about">
     <SectionHeader className="section-header">About</SectionHeader>
     <BodyP>
-      <Emoji text=":wave:"/> Hi! I'm Angad, a student at{' '}
+      <Emoji text=":wave:" />
+      Hi! I'm Angad, a sophomore at{' '}
       <Link target="__blank" href="https://dpsrkp.net">
         Delhi Public School, R.K. Puram
       </Link>{' '}
@@ -59,8 +60,8 @@ const Education = () => (
       </SchoolName>
       <SchoolDesc className="schooldesc">Class of '22</SchoolDesc>
       <BodyP>
-        I study in the 9th Grade at Delhi Public School, R.K. Puram. I am an
-        active member of my high school's computer club,{' '}
+        I am a high school freshman at Delhi Public School, R.K. Puram. I am an
+        active member of my school's computer club,{' '}
         <Link target="__blank" href="https://exunclan.com">
           Exun Clan
         </Link>{' '}
@@ -108,7 +109,12 @@ const Contact = () => (
   <Section id="contact">
     <SectionHeader className="section-header">Contact</SectionHeader>
     <BodyP>
-      If you want to work with me you can email me <Link href="mailto:angadsingh567890@gmail">here</Link>. You could also <Link href="https://twitter.com/dotangad" target="__blank">tweet</Link> to me or <Link href="https://t.me/dotangad">text me on Telegram</Link>.
+      If you want to work with me you can email me{' '}
+      <Link href="mailto:angadsingh567890@gmail">here</Link>. You could also{' '}
+      <Link href="https://twitter.com/dotangad" target="__blank">
+        tweet
+      </Link>{' '}
+      to me or <Link href="https://t.me/dotangad">text me on Telegram</Link>.
     </BodyP>
   </Section>
 )
