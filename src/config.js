@@ -15,7 +15,7 @@ export default {
     },
     {
       fa: 'fas fa-envelope',
-      link: 'mailto:mail@angad.dev'
+      link: 'mailto:angadsinghcs@gmail.com'
     },
     {
       fa: 'fab fa-telegram',
