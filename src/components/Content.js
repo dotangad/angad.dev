@@ -24,13 +24,13 @@ const About = () => (
       <Link target="__blank" href="https://dpsrkp.net">
         Delhi Public School, R.K. Puram
       </Link>{' '}
-      and member at{' '}
+      and developer at{' '}
       <Link target="__blank" href="https://exunclan.com">
         Exun Clan
       </Link>
       . I am passionate about creating solutions with technology and building
-      products people love. Some of my other interests include Tetris, politics,
-      economics and theological history.
+      products people love. Some of my other interests include Tetris, public
+      policy, economics and theological history.
     </BodyP>
     <BodyP className="blog" style={{ display: 'none' }}>
       I often write about projects I'm working on, tech I've used and other
@@ -69,7 +69,7 @@ const Education = () => (
         the logistics and administration of our annual tech symposium.
       </BodyP>
       <BodyP>
-        I've won 15+ high-school and college technology quizzes, design
+        I've won 25+ high-school and college technology quizzes, design
         competitions and hackathons.
       </BodyP>
     </div>
@@ -80,10 +80,10 @@ const Skills = () => (
   <Section id="skills">
     <SectionHeader className="section-header">Skills</SectionHeader>
     <BodyP>
-      I'm proficient in <strong>Node.js</strong>, <strong>Koa.js</strong>,{' '}
-      <strong>Express.js</strong>, <strong>React.js</strong>, and{' '}
-      <strong>PHP</strong>. I can also use vanilla JavaScript to create highly
-      interactive user interfaces and memorable experiences.
+      I'm proficient in <strong>Node.js</strong>, <strong>Express.js</strong>,{' '}
+      <strong>React.js</strong>, and <strong>PHP</strong>. I can also use
+      vanilla JavaScript to create highly interactive user interfaces and
+      memorable experiences.
     </BodyP>
 
     <BodyP>
@@ -95,12 +95,7 @@ const Skills = () => (
     <BodyP>
       I like writing small <strong>Python</strong> or{' '}
       <strong>shell scripts</strong> which automate tasks like splitting PDFs,
-      checking websites for updates and compiling stylesheets. My editor of
-      choice is <strong>Emacs</strong>, here's my{' '}
-      <Link target="__blank" href="https://github.com/dotangad/dotemacs">
-        config
-      </Link>
-      .
+      checking websites for updates and compiling stylesheets.
     </BodyP>
   </Section>
 )
@@ -110,7 +105,7 @@ const Contact = () => (
     <SectionHeader className="section-header">Contact</SectionHeader>
     <BodyP>
       If you want to work with me you can email me{' '}
-      <Link href="mailto:angadsingh567890@gmail">here</Link>. You could also{' '}
+      <Link href="mailto:angadsinghcs@gmail.com">here</Link>. You could also{' '}
       <Link href="https://twitter.com/dotangad" target="__blank">
         tweet
       </Link>{' '}
@@ -136,7 +131,7 @@ const Footer = () => (
       <Link
         style={{ borderWidth: '2px', paddingBottom: '0' }}
         target="_blank"
-        href="https://github.com/dotangad/dotangad.github.io"
+        href="https://github.com/dotangad/angad.dev"
       >
         here
       </Link>
