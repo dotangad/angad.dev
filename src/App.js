@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import './App.css'
+import "./App.css";
 
-import Sidebar from './components/Sidebar'
-import Content from './components/Content'
+import Sidebar from "./components/Sidebar";
+import Content from "./components/Content";
 
 class App extends Component {
   render() {
@@ -12,8 +12,8 @@ class App extends Component {
         <Sidebar />
         <Content />
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;

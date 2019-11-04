@@ -1,9 +1,12 @@
-@import url('https://rsms.me/inter/inter-ui.css');
+@import url("https://rsms.me/inter/inter-ui.css");
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter UI var alt', sans-serif; }
+  html {
+    font-family: "Inter UI var alt", sans-serif;
+  }
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
