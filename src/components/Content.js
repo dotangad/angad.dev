@@ -20,21 +20,12 @@ const About = () => (
     <SectionHeader className="section-header">About</SectionHeader>
     <BodyP>
       <Emoji text=":wave:" />
-      Hi! I'm Angad, a sophomore at{" "}
-      <Link target="__blank" href="https://dpsrkp.net">
+      Hi! I'm Angad, a junior at{" "}
+      <Link href="https://dpsrkp.net">
         Delhi Public School, R.K. Puram
-      </Link>{" "}
-      and developer at{" "}
-      <Link target="__blank" href="https://exunclan.com">
-        Exun Clan
-      </Link>
-      . I am passionate about creating solutions with technology and building
+      </Link>{" "} and developer at <Link href="https://exunclan.com">Exun Clan</Link>. I am passionate about solving problems with technology and building
       products people love. Some of my other interests include Tetris, public
-      policy, economics and theological history.
-    </BodyP>
-    <BodyP className="blog" style={{ display: "none" }}>
-      I often write about projects I'm working on, tech I've used and other
-      things on my <Link href="/blog">blog</Link>.
+      policy and sociology.
     </BodyP>
   </Section>
 );
@@ -60,16 +51,16 @@ const Education = () => (
       </SchoolName>
       <SchoolDesc className="schooldesc">Class of '22</SchoolDesc>
       <BodyP>
-        I am a high school sophomore at Delhi Public School, R.K. Puram. I am an
+        I am a high school junior at Delhi Public School, R.K. Puram studying Physics, Economics, Maths and Computer Science. I am an
         active member of my school's computer club,{" "}
-        <Link target="__blank" href="https://exunclan.com">
+        <Link href="https://exunclan.com">
           Exun Clan
         </Link>{" "}
         where I build tools for internal use as well as applications which aid
         the logistics and administration of our annual tech symposium.
       </BodyP>
       <BodyP>
-        I've won 25+ high-school and college technology quizzes, design
+        I've won 30+ high-school and college technology quizzes, design
         competitions and hackathons.
       </BodyP>
     </div>
@@ -104,9 +95,9 @@ const Contact = () => (
   <Section id="contact">
     <SectionHeader className="section-header">Contact</SectionHeader>
     <BodyP>
-      If you want to work with me you can email me{" "}
-      <Link href="mailto:angadsinghcs@gmail.com">here</Link>. You could also{" "}
-      <Link href="https://twitter.com/dotangad" target="__blank">
+      Feel free to email me at <Link href="mailto:mail@angad.dev">mail[at]angad[dot]dev</Link>
+      You could also{" "}
+      <Link href="https://twitter.com/dotangad">
         tweet
       </Link>{" "}
       to me or <Link href="https://t.me/dotangad">text me on Telegram</Link>.
