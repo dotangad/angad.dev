@@ -95,7 +95,7 @@ const Contact = () => (
   <Section id="contact">
     <SectionHeader className="section-header">Contact</SectionHeader>
     <BodyP>
-      Feel free to email me at <Link href="mailto:mail@angad.dev">mail[at]angad[dot]dev</Link>
+      Feel free to email me at <Link href="mailto:mail@angad.dev">mail[at]angad[dot]dev</Link>.
       You could also{" "}
       <Link href="https://twitter.com/dotangad">
         tweet
