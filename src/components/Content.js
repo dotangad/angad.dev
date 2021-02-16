@@ -21,11 +21,11 @@ const About = () => (
     <BodyP>
       <Emoji text=":wave:" />
       Hi! I'm Angad, a junior at{" "}
-      <Link href="https://dpsrkp.net">
-        Delhi Public School, R.K. Puram
-      </Link>{" "} and developer at <Link href="https://exunclan.com">Exun Clan</Link>. I am passionate about solving problems with technology and building
-      products people love. Some of my other interests include Tetris, public
-      policy and sociology.
+      <Link href="https://dpsrkp.net">Delhi Public School, R.K. Puram</Link> and
+      developer at <Link href="https://exunclan.com">Exun Clan</Link>. I am
+      passionate about solving problems with technology and building products
+      people love. Some of my other interests include Tetris, military history
+      and public policy.
     </BodyP>
   </Section>
 );
@@ -51,13 +51,12 @@ const Education = () => (
       </SchoolName>
       <SchoolDesc className="schooldesc">Class of '22</SchoolDesc>
       <BodyP>
-        I am a high school junior at Delhi Public School, R.K. Puram studying Physics, Economics, Maths and Computer Science. I am an
-        active member of my school's computer club,{" "}
-        <Link href="https://exunclan.com">
-          Exun Clan
-        </Link>{" "}
-        where I build tools for internal use as well as applications which aid
-        the logistics and administration of our annual tech symposium.
+        I am a high school junior at Delhi Public School, R.K. Puram studying
+        Physics, Economics, Maths and Computer Science. I am an active member of
+        my school's computer club,{" "}
+        <Link href="https://exunclan.com">Exun Clan</Link> where I build tools
+        for internal use as well as applications which aid the logistics and
+        administration of our annual tech symposium.
       </BodyP>
       <BodyP>
         I've won 30+ high-school and college technology quizzes, design
@@ -78,12 +77,6 @@ const Skills = () => (
     </BodyP>
 
     <BodyP>
-      Along with Node and React, I have also used <strong>Ruby on Rails</strong>
-      , <strong>Golang</strong>, and <strong>Angular</strong> in previous
-      projects.
-    </BodyP>
-
-    <BodyP>
       I like writing small <strong>Python</strong> or{" "}
       <strong>shell scripts</strong> which automate tasks like splitting PDFs,
       checking websites for updates and compiling stylesheets.
@@ -95,12 +88,10 @@ const Contact = () => (
   <Section id="contact">
     <SectionHeader className="section-header">Contact</SectionHeader>
     <BodyP>
-      Feel free to email me at <Link href="mailto:mail@angad.dev">mail[at]angad[dot]dev</Link>.
-      You could also{" "}
-      <Link href="https://twitter.com/dotangad">
-        tweet
-      </Link>{" "}
-      to me or <Link href="https://t.me/dotangad">text me on Telegram</Link>.
+      Email me at{" "}
+      <Link href="mailto:mail@angad.dev">mail[at]angad[dot]dev</Link>. You could
+      also <Link href="https://twitter.com/dotangad">tweet</Link> to me or{" "}
+      <Link href="https://t.me/dotangad">text me on Telegram</Link>.
     </BodyP>
   </Section>
 );
@@ -112,11 +103,11 @@ const Footer = () => (
       textAlign: "center",
       fontSize: "1rem",
       lineHeight: "1.3rem",
-      marginBottom: "30px"
+      marginBottom: "30px",
     }}
   >
     <ThemeToggle />
-    <div>&copy; Angad Singh 2018</div>
+    <div>&copy; Angad Singh 2018-21</div>
     <div>
       Source available{" "}
       <Link
