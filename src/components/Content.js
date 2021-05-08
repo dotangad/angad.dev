@@ -20,7 +20,7 @@ const About = () => (
     <SectionHeader className="section-header">About</SectionHeader>
     <BodyP>
       <Emoji text=":wave:" />
-      Hi! I'm Angad, a junior at{" "}
+      Hi! I'm Angad, a senior at{" "}
       <Link href="https://dpsrkp.net">Delhi Public School, R.K. Puram</Link> and
       developer at <Link href="https://exunclan.com">Exun Clan</Link>. I am
       passionate about solving problems with technology and building products
