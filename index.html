@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Angad Singh" />
+    <meta
+      name="description"
+      content="Website of Angad Singh, a high school senior and casual developer"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Thanks @kbrgl -->
     <title>Angad Singh</title>
 
     <style>
@@ -18,7 +24,12 @@
         width: 100%;
         margin: 0;
         padding: 0;
-        color: #333;
+        color: #444;
+        line-height: 1.5;
+        font-family: Public Sans, system-ui;
+        font-size: 16px;
+
+        border-top: 2px solid #6655ff;
       }
 
       * {
@@ -28,75 +39,98 @@
       .container {
         max-width: 600px;
         width: 100%;
+        height: 100%;
         padding: 20px 40px;
-        font-family: Inter, system-ui;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: 1rem;
+      }
+
+      h1 > span {
+        font-weight: 400;
+        color: #666;
       }
 
       a {
-        text-decoration: none;
-        color: #0000ff;
-        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #eaeaef;
+        text-underline-offset: 2px;
+        color: #6655ff;
       }
 
-      a.dpsrkp {
-        color: #008800;
+      ul {
+        list-style-type: none;
+        padding-left: 0;
       }
 
-      a.exun {
-        color: #2977f5;
+      ul li {
+        margin: 0.5rem 0;
       }
 
-      a.contact {
-        font-weight: normal;
+      .usually {
+        font-size: 14px;
+        color: #888;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Angad Singh</h1>
+      <div>
+        <h1 style="display: flex; align-items: center">
+          <img
+            style="margin-right: 10px"
+            src="angad.jpg"
+            height="30"
+            width="30"
+            alt=""
+          />
+          Angad Singh<span>, friendly neighborhood developer.</span>
+        </h1>
 
-      <p>
-        Hi! I'm Angad, a senior at
-        <a href="https://dpsrkp.net" class="dpsrkp"
-          >Delhi Public School, R.K. Puram</a
-        >
-        and developer at
-        <a href="https://exunclan.com" class="exun">Exun Clan</a>.
-      </p>
+        <p>
+          Hi! I'm Angad, a senior at
+          <a href="https://dpsrkp.net" style="color: #008800"
+            >Delhi Public School, R.K. Puram</a
+          >
+          and developer at
+          <a href="https://exunclan.com" style="color: #2977f5">Exun Clan</a>.
+        </p>
 
-      <p>
-        I'm currently enrolled in the
-        <a href="https://recurse.com">Recurse Center's</a> Summer 1 Batch.
-      </p>
-
-      <h2>Contact and Socials</h2>
-      <ul>
-        <li>
-          <a class="contact" href="mailto:mail@angad.dev"
-            >Email (mail@angad.dev)</a
-          >
-        </li>
-        <li>
-          <a class="contact" href="https://twitter.com/dotangad"
-            >Twitter (@dotangad)</a
-          >
-        </li>
-        <li>
-          <a class="contact" href="https://github.com/dotangad"
-            >Github (@dotangad)</a
-          >
-        </li>
-        <li>
-          <a class="contact" href="https://linkedin.com/in/dotangad"
-            >Linkedin (/in/dotangad)</a
-          >
-        </li>
-        <li>
-          <a class="contact" href="https://t.me/dotangad"
-            >Telegram (@dotangad)</a
-          >
-        </li>
-      </ul>
+        <p>
+          I'm currently enrolled in the
+          <a href="https://recurse.com">Recurse Center's</a> Summer 1 Batch.
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="mailto:mail@angad.dev">Email</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/dotangad">Twitter</a>
+          </li>
+          <li>
+            <a href="https://github.com/dotangad">Github</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/dotangad">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://t.me/dotangad">Telegram</a>
+          </li>
+        </ul>
+        <p class="usually">@dotangad, most places.</p>
+      </div>
     </div>
   </body>
 </html>
