@@ -8,6 +8,11 @@
       name="description"
       content="Website of Angad Singh, a high school senior and casual developer"
     />
+    <link
+      rel="shortcut icon"
+      href="https://media.discordapp.net/attachments/431825419059200000/849390615045210142/photo_2021-04-24_18-16-23.jpg"
+      type="image/png"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
@@ -55,7 +60,7 @@
         font-size: 1rem;
       }
 
-      h1 > span {
+      h1 > div > span {
         font-weight: 400;
         color: #666;
       }
@@ -81,6 +86,17 @@
         font-size: 14px;
         color: #888;
       }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+
+        h1 img {
+          width: 40px;
+          height: 40px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -94,7 +110,7 @@
             width="30"
             alt=""
           />
-          Angad Singh<span>, friendly neighborhood developer.</span>
+          <div>Angad Singh<span>, friendly neighborhood developer.</span></div>
         </h1>
 
         <p>
@@ -107,8 +123,8 @@
         </p>
 
         <p>
-          I'm currently enrolled in the
-          <a href="https://recurse.com">Recurse Center's</a> Summer 1 Batch.
+          I'm currently enrolled in the Summer 1 Batch at
+          <a href="https://recurse.com">Recurse Center</a>.
         </p>
       </div>
       <div>
@@ -120,10 +136,10 @@
             <a href="https://twitter.com/dotangad">Twitter</a>
           </li>
           <li>
-            <a href="https://github.com/dotangad">Github</a>
+            <a href="https://github.com/dotangad">GitHub</a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/dotangad">Linkedin</a>
+            <a href="https://linkedin.com/in/dotangad">LinkedIn</a>
           </li>
           <li>
             <a href="https://t.me/dotangad">Telegram</a>
